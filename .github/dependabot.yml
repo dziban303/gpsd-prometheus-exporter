@@ -11,7 +11,7 @@ updates:
       time: "06:00"
       interval: "daily"
     assignees:
-      - "hexa2k9"
+      - "dziban303"
 
   - package-ecosystem: "pip"
     directory: "/"
@@ -19,7 +19,7 @@ updates:
       time: "06:00"
       interval: "daily"
     assignees:
-      - "hexa2k9"
+      - "dziban303"
 
   - package-ecosystem: "github-actions"
     directory: "/"
@@ -27,4 +27,4 @@ updates:
       time: "06:00"
       interval: "daily"
     assignees:
-      - "hexa2k9"
+      - "dziban303"
