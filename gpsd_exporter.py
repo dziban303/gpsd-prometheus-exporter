@@ -208,7 +208,7 @@ USAGE
             dest="geo_bucket_size",
             default=0.5,
             type=float,
-            help="Bucket side of Geo histogram [default: %(default)s meter] ",
+            help="Bucket size of Geo histogram [default: %(default)s meter] ",
         )
         parser.add_argument(
             "--geo-bucket-count",
@@ -231,7 +231,7 @@ USAGE
             dest="pps_bucket_size",
             default=250,
             type=int,
-            help="Bucket side of PPS histogram [default: %(default)s ns]  (nano seconds)",
+            help="Bucket size of PPS histogram [default: %(default)s ns]  (nano seconds)",
         )
         parser.add_argument(
             "--pps-bucket-count",
