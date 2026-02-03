@@ -100,7 +100,7 @@ To make sure prometheus is polling the exporter add the following line to `/etc/
 ```
 Be careful not to break with the yml document format as it will block propper startup of prometheus.
 
-I've included a [grafana dashboard json file](https://github.com/dziban303/gpsd-prometheus-exporter/blob/main/gpsd_grafana_dashboard.json) which you can load into grafana.
+I've included a [grafana dashboard json file](https://github.com/hexa2k9/gpsd-prometheus-exporter/blob/main/gpsd_grafana_dashboard.json) which you can load into grafana.
 
  
 ## Per Satellite data
@@ -197,7 +197,7 @@ An example `docker-compose.yml` is provided in the root directory of this projec
 ```yaml
 services:
   gpsdx:
-    image: ghcr.io/dziban303/gpsd-prometheus-exporter:latest
+    image: ghcr.io/hexa2k9/gpsd-prometheus-exporter:latest
     container_name: gpsdx
     hostname: gpsdx
     ports:
