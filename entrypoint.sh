@@ -16,6 +16,7 @@ EXPORTER_ARGS=""
 
 [[ -z "${PPS_BUCKET_SIZE}" ]] || EXPORTER_ARGS="${EXPORTER_ARGS} --pps-bucket-size ${PPS_BUCKET_SIZE}"
 [[ -z "${PPS_BUCKET_COUNT}" ]] || EXPORTER_ARGS="${EXPORTER_ARGS} --pps-bucket-count ${PPS_BUCKET_COUNT}"
+[[ -z "${PPS_TIME1}" ]] || EXPORTER_ARGS="${EXPORTER_ARGS} --pps-time1 ${PPS_TIME1}"
 
 set -x
 exec ./gpsd_exporter.py -v --pps-histogram --offset-from-geopoint $EXPORTER_ARGS
